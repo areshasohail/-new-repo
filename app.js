@@ -42,7 +42,7 @@ meriApp.post('/create', function(req, res){
  meriApp.get ('/m5',function(req,res){
         res.json(users)
 })
-meriApp.use(myExpress.static('/build'))
+meriApp.use(myExpress.static('./build'))
 meriApp.listen(3004,function(){
     console.log("aresha");
 })
